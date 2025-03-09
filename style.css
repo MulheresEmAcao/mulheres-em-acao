@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #178f90;
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  width: 75%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url(./logotipo.jpeg);
+  background-size: contain;
+  border: #dd5b3b solid 10px ;
+}
+button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* Texto branco */
+  background: linear-gradient(135deg, #c8d9d1, #178f90); /* Roxo e rosa */
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(
+    135deg,
+    #fdbe55,
+    #c8d9d1
+  ); /* Tons mais escuros para hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+button > a {
+  color: #dd5b3b;
+}
+
