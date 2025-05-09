@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: #f6f9f8; /* novo fundo mais claro */
+  color: #555;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  height: 100vh;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+main {
+  width: 75%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: #dd5b3b solid 10px;
+  margin: 0 auto;
+}
+.intro {
+  background-color: transparent;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.intro h2 {
+  color: #178f90; /* Paleta 1: cor forte para título */
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.intro p {
+  color: #555; /* Paleta 2: cor neutra para texto */
+  font-size: 1.1em;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white; /* Paleta 2: contraste alto para leitura */
+  background: linear-gradient(135deg, #dd5b3b, #178f90); /* Paleta 1 */
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(
+    135deg,
+    #178f90,
+    #bb664a
+  ); /* Reversão com leve escurecido */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Se estiver usando <a class="btn"> para botões link */
+button > a {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #dd5b3b, #178f90);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button > a:hover {
+  background: linear-gradient(135deg, #178f90, #bb664a);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
